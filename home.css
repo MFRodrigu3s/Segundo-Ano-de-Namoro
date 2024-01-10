@@ -10,6 +10,7 @@ body {
     background-image:url('fundo.svg');
     background-position: cover;
     color: #EDEBE5;
+    font-family: helvetica;
 }
 
 /*  */
