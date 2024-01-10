@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image:url('fundo.svg');
+    background-position: cover;
+    color: #EDEBE5;
+}
+
+/*  */
+
+/* CABEÇALHO ------------------------------------------------ */
+
+#menu-nav {
+    background-color: #CCA64F;
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#div-logo {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-logo {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#div-botao {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FIM DO CABEÇALHO ----------------------------------------- */
+
+/* MENU MOBILE ---------------------------------------------- */
+
+#div-container-menu {
+    background-color: #CCA64F;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 10px;
+    display: none;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+}
+
+#ul-menu {
+    list-style: none;
+    text-align: center;
+}
+
+.li-menu {
+    padding: 30px 0px;
+    border-top: 2px solid #ffff;
+}
+
+.link-menu {
+    text-decoration: none; 
+    padding: 12px 10px;
+    color: #fff;
+}
+
+/* FIM DO MENU MOBILE --------------------------------------- */
+
+/* INICIO DO BANER */
+
+#div-container-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo-banner {
+    margin-top: 50px;
+    font-size: 1.7rem;
+}
+
+#div-foto-banner {
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 85%;
+    height: 80%;
+}
+
+#foto-banner {
+    width: 100%;
+    height: 100%;
+}
+
+#subtitulo-baner {
+    text-align: center;
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+/* FIM DO BANNER */
+
+
+/* INICIO DA APRESENTACAO */
+
+#titulo-apresentacao {
+    margin-left: 25px;
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+#div-container-texto-apresentacao {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#caixa-textos {
+    width: 90%;
+}
+
+.texto-apresentacao {
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 1.1rem;
+}
+
+/* FIM DA APRESENTAÇÃO */
+
+/* INICIO DO CARROSSEL */
+
+#div-container-carrossel {
+    width: 90vw;
+    height: 35vh;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+#div-slidesEinputs {
+    overflow: hidden;
+    display: flex;
+    width: 300%;
+}
+
+#div-slidesEinputs input {
+    display: none;
+}
+
+.slide {
+    width: 33.35%;
+    transition: 0.9s;
+}
+
+.slide img {
+    width: 100%;
+}
+
+#input1:checked ~ .s1 {
+    margin-left: 0px;
+}
+
+#input2:checked ~ .s1 {
+    margin-left: -33.35%;
+}
+
+#input3:checked ~ .s1 {
+    margin-left: -66.7%;
+}
+
+/* FIM DO CARROSSEL */
+
+/* INICIO DAS OPÇÕES */
+
+#div-container-opcoes {
+    text-align: center;
+}
+
+#titulo-opcoes {
+    height: 10%;
+    font-size: 1.8rem;
+}
+
+#div-container-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 40vh;
+}
+
+.div-opcao {
+    width: 70%;
+    height: 65px;
+}
+
+.text-opcao{
+    background-color: #CCA64F;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #ECD59A;
+    color: black;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+/* FIM DAS OPÇÕES */
+
+#mensagem {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+/* INICÍO RODAPÉ */
+
+footer {
+    background-color: #CCA64F;
+    height: 10%;
+}
+
+footer ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #8B181B;
+    text-decoration: none;
+}
+
+.icone-footer {
+    width: 80px;
+}
+
+/* FIM RODAPÉ */
+
+/* MENU NAV */
+
+#div-menu-mobile {
+    height: 25vh;
+    width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px;
+    display: none;
+    position: absolute;
+}
+
+#menu-lista {
+    height: 100%;
+    list-style: none;
+}
+
+.item-menu {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #ffff;
+}
+
+.link-item {
+    text-decoration: none;
+    color: #ffff;
+    padding: 10px 10px;
+}
+
+#botao-menu {
+    background-color: transparent;
+    border: none;
+}
+
+#img-botao {
+    width: 40px;
+}
+
+.aberto {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#espaco {
+    margin-top: 1000px;
+}
+

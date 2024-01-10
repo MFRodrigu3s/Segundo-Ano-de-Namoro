@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantadas</title>
+    <link rel="stylesheet" href="cantadas.css">
+</head>
+<body>
+        <nav id="menu-nav">
+            <div id="div-logo">
+                <img src="logo.svg" alt="logo" id="img-logo">
+            </div>
+            <div id="div-botao">
+                 <img onclick="exibirMenu()" id="img-botao" src="menu.svg" alt="botao menu">
+            </div>
+        </nav>
+        <div id="div-container-menu">
+            <ul id="ul-menu">
+                <li class="li-menu">
+                    <a href="musicas.html" class="link-menu">
+                        Músicas que me Lembram de Você
+                    </a>
+                </li>
+                <li class="li-menu">
+                    <a href="cantadas.html" class="link-menu">
+                        Cantadas que Eu Usaria Contigo
+                    </a>
+                </li>
+                <li class="li-menu">
+                    <a href="coisas.html" class="link-menu">
+                        Coisas que Eu Amo em Você
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="div-container">
+            <h1 id="titulo">Cantadas que Eu Usaria Contigo</h1>
+            <div id="container-forms">
+                <div id="div-container-form">
+                    <div id="div-form">
+                        <p id="subtitulo">Escolha um número de 1 a 6</p>
+                        <input id="input" type="text">
+                        <button onclick="exibir()" id="botao" type="submit">Enviar</button>
+                    </div>
+                </div>
+                <div id="div-container-cantada" class="close">
+                    <div id="caixa-cantada">
+                        <p id="texto-cantada">"texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://wa.me/5554991557985">
+                        <img src="whats.svg" alt="logo whats" class="icone-footer"></li>
+                    </a>
+                <li><a href="home.html">Voltar ao Inicio</a></li>
+                <li>
+                    <a href="https://www.instagram.com/_mrodriguesss_?igsh=MTB2ZjNlaWRiamlhNg==">
+                        <img src="insta.svg" alt="logo insta" class="icone-footer"></li>
+                    </a>
+            </ul>
+        </footer>
+</body>
+    <script src="cantadas.js"></script>
+</html>
